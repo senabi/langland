@@ -6,7 +6,8 @@ import "core:bytes"
 import "core:os"
 
 main :: proc() {
-	endpoint, ok := net.parse_endpoint("127.0.0.1:3000");if !ok {
+	endpoint, ok := net.parse_endpoint("127.0.0.1:3000")
+  if !ok {
 		fmt.println("Error parsing endpoint: ", ok)
 		os.exit(1)
 	}
